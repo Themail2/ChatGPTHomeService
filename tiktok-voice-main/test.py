@@ -22,7 +22,7 @@ while True:
       print("Could not convert audio to text")
   # When the user speaks the prompt phrase, send that to chatGPT
   if text.find("I need help") != -1:
-    text = text[text.find("I need help")-10:]
+    text = text[text.find("I need help")+10:]
     print(text)
     completion = openai.ChatCompletion.create(
       model="gpt-3.5-turbo-0301",
