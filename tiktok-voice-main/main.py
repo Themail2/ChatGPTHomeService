@@ -61,7 +61,7 @@ voices = [
 ]
 
 
-def tts(session_id: str = "ea0b3ef48fb18e9eafffebcd380d1717", text_speaker: str = "en_us_001", req_text: str = "TikTok Text To Speech", filename: str = 'voice.mp3', play: bool = True):
+def tts(session_id: str = "", text_speaker: str = "en_us_001", req_text: str = "TikTok Text To Speech", filename: str = 'voice.mp3', play: bool = True):
 
     req_text = req_text.replace("+", "plus")
     req_text = req_text.replace(" ", "+")
