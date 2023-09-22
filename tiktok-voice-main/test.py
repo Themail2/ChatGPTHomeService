@@ -38,5 +38,5 @@ while True:
     # from overwriting it and playing the new file
     os.remove("voice.mp3")
     # Send all relevant info to the tiktok API
-    os.system("python3 main.py -v en_us_001 -p -f text.txt -s your tiktok session ID cookie here")
+    os.system("python3 main.py -v en_us_001 -p -f text.txt -s 5ee3c49ddd7832e77b607e9a50688922")
     playsound.playsound("voice.mp3")

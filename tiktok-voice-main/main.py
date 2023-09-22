@@ -61,7 +61,7 @@ voices = [
 ]
 
 
-def tts(session_id: str = "", text_speaker: str = "en_us_001", req_text: str = "TikTok Text To Speech", filename: str = 'voice.mp3', play: bool = True):
+def tts(session_id: str = "5ee3c49ddd7832e77b607e9a50688922", text_speaker: str = "en_us_001", req_text: str = "TikTok Text To Speech", filename: str = 'voice.mp3', play: bool = True):
 
     req_text = req_text.replace("+", "plus")
     req_text = req_text.replace(" ", "+")
@@ -108,7 +108,7 @@ def tts(session_id: str = "", text_speaker: str = "en_us_001", req_text: str = "
 
     return output_data
 
-def tts_batch(session_id: str, text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to Speech', filename: str = 'voice.mp3'):
+def tts_batch(session_id: str = r"5ee3c49ddd7832e77b607e9a50688922", text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to Speech', filename: str = 'voice.mp3'):
     req_text = req_text.replace("+", "plus")
     req_text = req_text.replace(" ", "+")
     req_text = req_text.replace("&", "and")
